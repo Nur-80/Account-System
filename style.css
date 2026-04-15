@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+/* TOP */
+.top {
+    height: 100px;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+/* MAIN */
+.main1 {
+    display: flex;
+    height: calc(150vh - 200px);
+}
+.main2 {
+    display: flex;
+    height: calc(100vh - 200px);
+}
+.main3 {
+    display: flex;
+    height: calc(100vh - 200px);
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 220px;
+    border-right: 2px solid black;
+    padding: 20px;
+}
+
+.sidebar button {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+/* CONTENT */
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+/* SLIDER */
+.slider {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+slider img {
+    position: fixed;
+    top: 100px;
+    width: 75%;
+    height: auto;
+    object-fit: cover;
+}
+#slider-img {
+    width: 90%;
+    display: block;
+    opacity: 1;
+    transition: opacity 1s ease-in-out; /* Slow motion effect */
+}
+
+/* Image change hobar somoy eita kaj korbe */
+.fade-out {
+    opacity: 0 !important;
+}
+
+/* FOOTER */
+.footer {
+    height: 50px;
+    border-top: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer span {
+    margin: 0 80px;
+}
+
+body{
+    font-family: Arial;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.footer1{
+    height: 50px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer1 span {
+    margin: 0 120px;
+}
+
+body{
+    font-family: Arial;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+container{
+    width:800px;
+    margin:auto;
+    background:white;
+    padding:20px;
+    margin-top:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px gray;
+}
+
+input,select{
+    padding:8px;
+    margin:5px;
+    width:200px;
+}
+
+input[disabled]{
+    justify-content: center;
+    background: #eee;
+}
+
+button{
+    padding:8px 12px;
+    background:#007bff;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#0056b3;
+}
+
+table{
+    width:100%;
+    margin-top:20px;
+    border-collapse:collapse;
+}
+
+table,th,td{
+    border:1px solid black;
+}
+
+th{
+    background:#007bff;
+    color:white;
+}
+
+th,td{
+    padding:10px;
+}
+

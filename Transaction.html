@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+</head>
+
+<body>
+
+    <!-- TOP -->
+<div class="top">
+    <h2>🏦 Bank Logo</h2>
+</div>
+
+    <!-- MAIN -->
+<div class="main3">
+
+    <!-- LEFT -->
+    <div class="sidebar">
+        <a href="bank.html"><button>Home</button></a>
+        <a href="Create.html"><button>Create Account</button></a>
+        <a href="All Transaction.html"><button>All Transaction</button></a>
+        <a href="all account.html"><button>All Accounts Summary</button></a>
+    </div>
+
+    <div class="content">
+        <h2>Account Management System</h2>
+
+        <h3>Transaction</h3>  
+        <input type="text" id="transAccNumber" placeholder="Account Number">  
+        <input type="text" id="transName" placeholder="Name" disabled>  
+        <input type="number" id="transAmount" placeholder="Amount">  
+        <select id="transType">  
+            <option value="">Select Type</option>  
+            <option value="deposit">Deposit (+)</option>  
+            <option value="withdraw">Withdraw (-)</option>  
+        </select>  
+        <button onclick="addTransaction()">Add Transaction</button>  
+        <hr>
+    </div>
+</div>
+
+<!-- BOTTOM MENU -->
+<div class="footer">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

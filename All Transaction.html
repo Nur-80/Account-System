@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Transaction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- LEFT -->
+    <div class="">
+        <h4><a href="bank.html"><button>Home</button></a></h4>
+        
+    </div><br>
+    <!-- Search -->
+        <input type="text" id="search" placeholder="Search Account/Name" onkeyup="searchTransaction()">
+        <br><br>
+        <button onclick="printAccounts()">Print</button>
+        <button onclick="downloadJPG()">Download JPG</button>
+
+    <!-- All Transactions -->
+        <h3 onclick="toggleTransactions()" style="cursor:pointer;">All Transactions 🔰</h3>
+        <div id="tableArea" style="display:none">
+            <table>
+                <tr>
+                    <th>Account Number</th>
+                    <th>Name</th>
+                    <th>Amount</th>
+                    <th>Type</th>
+                    <th>Time</th>
+                </tr>
+                <tbody id="transactionList"></tbody>
+            </table>
+        </div>
+<script src="script.js"></script>
+</body>
+</html>

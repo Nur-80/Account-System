@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<!-- TOP -->
+<div class="top">
+    <h2>🏦 Bank Logo</h2>
+</div>
+
+<!-- MAIN -->
+<div class="main2">
+
+    <!-- LEFT -->
+    <div class="sidebar">
+        <a href="bank.html"><button>Home</button></a>
+        <a href="Transaction.html"><button>Transaction</button></a>
+        <a href="all account.html"><button>All Accounts Summary</button></a>
+    </div>
+
+    <div class="content">
+          <h3>Create Account</h3>
+          <input type="text" id="accName" placeholder="Name">
+          <input type="text" id="accNumber" placeholder="Account Number">
+          <input type="text" id="accPass" placeholder="Password">
+          <button onclick="createAccount()">Create</button>
+          <p id="signupMsg"></p>
+            <hr>
+
+        <!-- All Accounts Summary -->
+        <h3 onclick="toggleAccounts()" style="cursor:pointer;">All Accounts Summary 🔰</h3>
+        <table id="accountTable" style="display:none">
+            <tr>
+                <th>Account Number</th>
+                <th>Name</th>
+                <th>Balance</th>
+                <th>Last Time</th>
+                <th>Action</th>
+            </tr>
+            <tbody id="accountSummary"></tbody>
+        </table>
+    </div>
+
+
+</div>
+
+<!-- BOTTOM MENU -->
+<div class="footer">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+<script src="script.js"></script>
+</div>
+</body>
+</html>

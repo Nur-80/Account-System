@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Account</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- LEFT -->
+    <div class=""><br><br>
+        <a href="bank.html"><button>Home</button></a>
+    </div><br><br>
+    <div>
+        <!-- Search Account -->
+        <input type="text" id="search" placeholder="Search..." onkeyup="searchAccount()">
+        <br><br>
+        <button onclick="printAccounts()">Print</button>
+        <button onclick="downloadJPG()">Download JPG</button>
+        
+        <!-- All Accounts Summary -->
+        <h3 onclick="toggleAccounts()" style="cursor:pointer;">All Accounts Summary 🔰</h3>
+        <table id="accountTable" style="display:none">
+            <tr>
+                <th>Account Number</th>
+                <th>Name</th>
+                <th>Balance</th>
+                <th>Last Time</th>
+                <th>Action</th>
+            </tr>
+            <tbody id="accountSummary"></tbody>
+        </table>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
